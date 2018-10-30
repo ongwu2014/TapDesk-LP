@@ -1,0 +1,35 @@
+# FOLDER
+# ==========
+.idea/*
+.gulp/*
+.cache/*
+.sass-cache/*
+.tmp/*
+_tmp/*
+node_modules/*
+vendor/*
+src/*
+gulp/*
+
+# FILES
+# ==========
+package-lock.json
+package.json
+.bowerrc
+bower.json
+gulpfile.js
+yarn.lock
+
+
+# EXTENSIONS
+# ==========
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
