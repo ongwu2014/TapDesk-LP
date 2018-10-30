@@ -1,6 +1,78 @@
 /* line 1, src/scss/_generated/_spriteSVG.scss */
+.icon-ai {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 5, src/scss/_generated/_spriteSVG.scss */
+.icon-analytics {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 9, src/scss/_generated/_spriteSVG.scss */
+.icon-cloud {
+  width: 44px;
+  height: 42px;
+}
+
+/* line 13, src/scss/_generated/_spriteSVG.scss */
+.icon-features {
+  width: 40px;
+  height: 37px;
+}
+
+/* line 17, src/scss/_generated/_spriteSVG.scss */
+.icon-features-box-0 {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 21, src/scss/_generated/_spriteSVG.scss */
+.icon-features-box-1 {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 25, src/scss/_generated/_spriteSVG.scss */
+.icon-features-box-2 {
+  width: 40px;
+  height: 42px;
+}
+
+/* line 29, src/scss/_generated/_spriteSVG.scss */
+.icon-features-box-3 {
+  width: 44px;
+  height: 46px;
+}
+
+/* line 33, src/scss/_generated/_spriteSVG.scss */
+.icon-features-box-4 {
+  width: 40px;
+  height: 40px;
+}
+
+/* line 37, src/scss/_generated/_spriteSVG.scss */
+.icon-leads {
+  width: 44px;
+  height: 43px;
+}
+
+/* line 41, src/scss/_generated/_spriteSVG.scss */
 .icon-logo {
   width: 145px;
+  height: 36px;
+}
+
+/* line 45, src/scss/_generated/_spriteSVG.scss */
+.icon-pipelines {
+  width: 40px;
+  height: 42px;
+}
+
+/* line 49, src/scss/_generated/_spriteSVG.scss */
+.icon-request {
+  width: 48px;
   height: 36px;
 }
 
@@ -405,6 +477,140 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
+/* line 3, src/scss/_macros/_title.scss */
+.c-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+/* line 9, src/scss/_macros/_title.scss */
+.c-title--features {
+  padding-bottom: 60px;
+}
+
+/* line 12, src/scss/_macros/_title.scss */
+.c-title--request {
+  padding-bottom: 50px;
+}
+
+/* line 15, src/scss/_macros/_title.scss */
+.c-title--request h1 {
+  color: #fff;
+}
+
+/* line 19, src/scss/_macros/_title.scss */
+.c-title--cloud {
+  padding-bottom: 20px;
+}
+
+/* line 22, src/scss/_macros/_title.scss */
+.c-title--analytics {
+  padding-bottom: 20px;
+}
+
+/* line 25, src/scss/_macros/_title.scss */
+.c-title--papelines {
+  padding-bottom: 20px;
+}
+
+/* line 28, src/scss/_macros/_title.scss */
+.c-title--ai {
+  padding-bottom: 42px;
+}
+
+/* line 32, src/scss/_macros/_title.scss */
+.c-title__text {
+  text-align: center;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Muli", sans-serif;
+  font-size: 25px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 32, src/scss/_macros/_title.scss */
+  .c-title__text {
+    font-size: calc(25px + 15 * (100vw - 320px) / 1280);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  /* line 32, src/scss/_macros/_title.scss */
+  .c-title__text {
+    font-size: 40px;
+  }
+}
+
+/* line 43, src/scss/_macros/_title.scss */
+.c-title__icon-wrap {
+  padding-bottom: 22px;
+}
+
+/* line 46, src/scss/_macros/_title.scss */
+.c-title__icon-wrap svg {
+  fill: #cd084b;
+}
+
+/* line 50, src/scss/_macros/_title.scss */
+.c-title__icon-wrap .icon-request {
+  fill: rgba(255, 255, 255, 0.4);
+}
+
+/* line 3, src/scss/_macros/_btn.scss */
+.c-btn {
+  outline: none;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 291px;
+  height: 70px;
+  border-radius: 10px;
+  border: 2px solid #cd084b;
+  background-color: transparent;
+  color: #cd084b;
+  text-transform: uppercase;
+  letter-spacing: 1.35px;
+  font-size: 18px;
+  font-weight: bold;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 22, src/scss/_macros/_btn.scss */
+.c-btn--features {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 28, src/scss/_macros/_btn.scss */
+.c-btn--border:hover {
+  background-color: #cd084b;
+  color: #fff;
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
 /* line 3, src/scss/_components/_footer.scss */
 .footer {
   background-color: #191919;
@@ -520,10 +726,231 @@ picture {
   }
 }
 
+/* line 3, src/scss/_components/homepage/_ai.scss */
+.ai {
+  border-bottom: 1px solid #D8D8D8;
+}
+
+/* line 6, src/scss/_components/homepage/_ai.scss */
+.ai__wrapper {
+  padding-top: 68px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 6, src/scss/_components/homepage/_ai.scss */
+  .ai__wrapper {
+    padding-top: 34px;
+    padding-bottom: 30px;
+  }
+}
+
+/* line 3, src/scss/_components/homepage/_leads.scss */
+.leads {
+  border-bottom: 1px solid #D8D8D8;
+}
+
+/* line 6, src/scss/_components/homepage/_leads.scss */
+.leads__wrapper {
+  padding-top: 99px;
+  padding-bottom: 37px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 6, src/scss/_components/homepage/_leads.scss */
+  .leads__wrapper {
+    padding-top: 50px;
+    padding-bottom: 18px;
+  }
+}
+
+/* line 4, src/scss/_components/homepage/_pipelines.scss */
+.pipelines__wrapper {
+  padding-top: 100px;
+  padding-bottom: 118px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 4, src/scss/_components/homepage/_pipelines.scss */
+  .pipelines__wrapper {
+    padding-top: 50px;
+    padding-bottom: 59px;
+  }
+}
+
+/* line 3, src/scss/_components/homepage/_analytics.scss */
+.analytics {
+  background-color: #F8FAFC;
+}
+
+/* line 6, src/scss/_components/homepage/_analytics.scss */
+.analytics__wrapper {
+  padding-top: 98px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 6, src/scss/_components/homepage/_analytics.scss */
+  .analytics__wrapper {
+    padding-top: 49px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 3, src/scss/_components/homepage/_cloud.scss */
+.cloud {
+  border-bottom: 1px solid #D8D8D8;
+}
+
+/* line 6, src/scss/_components/homepage/_cloud.scss */
+.cloud__wrapper {
+  padding-top: 98px;
+  padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 6, src/scss/_components/homepage/_cloud.scss */
+  .cloud__wrapper {
+    padding-top: 49px;
+    padding-bottom: 50px;
+  }
+}
+
 /* line 4, src/scss/_components/homepage/_features.scss */
 .features__wrapper {
-  padding-top: 66px;
+  padding-top: 100px;
   padding-bottom: 100px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 4, src/scss/_components/homepage/_features.scss */
+  .features__wrapper {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+/* line 14, src/scss/_components/homepage/_features.scss */
+.features__row-0 {
+  padding-bottom: 60px;
+}
+
+/* line 21, src/scss/_components/homepage/_features.scss */
+.features__box {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 180px;
+  margin-left: 5px;
+  margin-right: 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 21, src/scss/_components/homepage/_features.scss */
+  .features__box {
+    width: calc(50% - 10px);
+    margin-bottom: 19px;
+  }
+}
+
+/* line 35, src/scss/_components/homepage/_features.scss */
+.features__box:hover .features__box-circle {
+  background-color: transparent;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 39, src/scss/_components/homepage/_features.scss */
+.features__box:hover .features__box-circle svg {
+  fill: #D01756;
+  -webkit-transition: fill 0.3s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+
+/* line 46, src/scss/_components/homepage/_features.scss */
+.features__box-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 46, src/scss/_components/homepage/_features.scss */
+  .features__box-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 54, src/scss/_components/homepage/_features.scss */
+.features__box-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+  border: 2px solid #D01756;
+  background-color: #D01756;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* line 67, src/scss/_components/homepage/_features.scss */
+.features__box-circle svg {
+  fill: #fff;
+  -webkit-transition: fill 0.3s ease-in-out;
+  -o-transition: fill 0.3s ease-in-out;
+  transition: fill 0.3s ease-in-out;
+}
+
+/* line 73, src/scss/_components/homepage/_features.scss */
+.features__box-text {
+  padding-top: 19px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* line 3, src/scss/_components/homepage/_request.scss */
+.request {
+  background: #00449D;
+  background: -webkit-gradient(linear, left top, right top, from(#00449D), to(#001632));
+  background: -webkit-linear-gradient(left, #00449D, #001632);
+  background: -o-linear-gradient(left, #00449D, #001632);
+  background: linear-gradient(to right, #00449D, #001632);
+}
+
+/* line 6, src/scss/_components/homepage/_request.scss */
+.request__wrapper {
+  padding-top: 102px;
+  padding-bottom: 99px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 6, src/scss/_components/homepage/_request.scss */
+  .request__wrapper {
+    padding-top: 51px;
+    padding-bottom: 50px;
+  }
 }
 
 /*# sourceMappingURL=maps/app.css.map */
