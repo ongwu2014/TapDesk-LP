@@ -799,20 +799,126 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_cloud.scss */
 .cloud {
+  position: relative;
   border-bottom: 1px solid #D8D8D8;
 }
 
-/* line 6, src/scss/_components/homepage/_cloud.scss */
+/* line 7, src/scss/_components/homepage/_cloud.scss */
+.cloud__bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 15, src/scss/_components/homepage/_cloud.scss */
+.cloud__bg-img {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 15, src/scss/_components/homepage/_cloud.scss */
+  .cloud__bg-img {
+    -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+            transform: scale(0.5);
+  }
+}
+
+/* line 23, src/scss/_components/homepage/_cloud.scss */
+.cloud__bg-img-0 {
+  top: 52px;
+  left: 473px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 23, src/scss/_components/homepage/_cloud.scss */
+  .cloud__bg-img-0 {
+    left: 20%;
+  }
+}
+
+/* line 30, src/scss/_components/homepage/_cloud.scss */
+.cloud__bg-img-1 {
+  left: -96px;
+  bottom: 77px;
+}
+
+/* line 34, src/scss/_components/homepage/_cloud.scss */
+.cloud__bg-img-2 {
+  left: 72px;
+  bottom: 97px;
+  mix-blend-mode: multiply;
+}
+
+/* line 39, src/scss/_components/homepage/_cloud.scss */
+.cloud__bg-img-3 {
+  right: 329px;
+  bottom: -36px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 39, src/scss/_components/homepage/_cloud.scss */
+  .cloud__bg-img-3 {
+    right: 20%;
+  }
+}
+
+/* line 46, src/scss/_components/homepage/_cloud.scss */
+.cloud__bg-img-4 {
+  bottom: 213px;
+  right: -96px;
+}
+
+/* line 50, src/scss/_components/homepage/_cloud.scss */
+.cloud__bg-img-5 {
+  right: -40px;
+  bottom: 190px;
+  mix-blend-mode: multiply;
+}
+
+/* line 58, src/scss/_components/homepage/_cloud.scss */
 .cloud__wrapper {
+  z-index: 1;
+  position: relative;
   padding-top: 98px;
   padding-bottom: 100px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 6, src/scss/_components/homepage/_cloud.scss */
+  /* line 58, src/scss/_components/homepage/_cloud.scss */
   .cloud__wrapper {
     padding-top: 49px;
     padding-bottom: 50px;
+  }
+}
+
+/* line 69, src/scss/_components/homepage/_cloud.scss */
+.cloud__text {
+  width: 100%;
+  max-width: 804px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #939393;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 69, src/scss/_components/homepage/_cloud.scss */
+  .cloud__text {
+    font-size: calc(16px + 2 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 69, src/scss/_components/homepage/_cloud.scss */
+  .cloud__text {
+    font-size: 18px;
   }
 }
 
@@ -932,6 +1038,26 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_request.scss */
 .request {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 8, src/scss/_components/homepage/_request.scss */
+.request__bg {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw + 300px);
+  margin-left: -150px;
+  height: 100%;
+  border-radius: 50%/100px 100px 0 0;
+}
+
+/* line 18, src/scss/_components/homepage/_request.scss */
+.request__bg-inner {
+  width: 100%;
+  height: 100%;
   background: #00449D;
   background: -webkit-gradient(linear, left top, right top, from(#00449D), to(#001632));
   background: -webkit-linear-gradient(left, #00449D, #001632);
@@ -939,14 +1065,16 @@ picture {
   background: linear-gradient(to right, #00449D, #001632);
 }
 
-/* line 6, src/scss/_components/homepage/_request.scss */
+/* line 25, src/scss/_components/homepage/_request.scss */
 .request__wrapper {
+  z-index: 1;
+  position: relative;
   padding-top: 102px;
   padding-bottom: 99px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 6, src/scss/_components/homepage/_request.scss */
+  /* line 25, src/scss/_components/homepage/_request.scss */
   .request__wrapper {
     padding-top: 51px;
     padding-bottom: 50px;
