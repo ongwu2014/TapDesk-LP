@@ -581,11 +581,16 @@ picture {
 }
 
 /* line 28, src/scss/_macros/_title.scss */
+.c-title--leads {
+  padding-bottom: 77px;
+}
+
+/* line 31, src/scss/_macros/_title.scss */
 .c-title--ai {
   padding-bottom: 42px;
 }
 
-/* line 32, src/scss/_macros/_title.scss */
+/* line 35, src/scss/_macros/_title.scss */
 .c-title__text {
   text-align: center;
   line-height: 1.2;
@@ -595,30 +600,30 @@ picture {
 }
 
 @media screen and (min-width: 320px) {
-  /* line 32, src/scss/_macros/_title.scss */
+  /* line 35, src/scss/_macros/_title.scss */
   .c-title__text {
     font-size: calc(25px + 15 * (100vw - 320px) / 1280);
   }
 }
 
 @media screen and (min-width: 1600px) {
-  /* line 32, src/scss/_macros/_title.scss */
+  /* line 35, src/scss/_macros/_title.scss */
   .c-title__text {
     font-size: 40px;
   }
 }
 
-/* line 43, src/scss/_macros/_title.scss */
+/* line 46, src/scss/_macros/_title.scss */
 .c-title__icon-wrap {
   padding-bottom: 22px;
 }
 
-/* line 46, src/scss/_macros/_title.scss */
+/* line 49, src/scss/_macros/_title.scss */
 .c-title__icon-wrap svg {
   fill: #cd084b;
 }
 
-/* line 50, src/scss/_macros/_title.scss */
+/* line 53, src/scss/_macros/_title.scss */
 .c-title__icon-wrap .icon-request {
   fill: rgba(255, 255, 255, 0.4);
 }
@@ -1111,21 +1116,155 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_leads.scss */
 .leads {
+  overflow: hidden;
   border-bottom: 1px solid #D8D8D8;
 }
 
-/* line 6, src/scss/_components/homepage/_leads.scss */
-.leads__wrapper {
-  padding-top: 99px;
-  padding-bottom: 37px;
+/* line 7, src/scss/_components/homepage/_leads.scss */
+.leads__bg {
+  z-index: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 6, src/scss/_components/homepage/_leads.scss */
+  /* line 7, src/scss/_components/homepage/_leads.scss */
+  .leads__bg {
+    position: static;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 21, src/scss/_components/homepage/_leads.scss */
+.leads__bg-left, .leads__bg-right {
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 21, src/scss/_components/homepage/_leads.scss */
+  .leads__bg-left, .leads__bg-right {
+    width: 100%;
+  }
+}
+
+/* line 30, src/scss/_components/homepage/_leads.scss */
+.leads__bg-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 30, src/scss/_components/homepage/_leads.scss */
+  .leads__bg-left {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* line 37, src/scss/_components/homepage/_leads.scss */
+.leads__bg-left img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 44, src/scss/_components/homepage/_leads.scss */
+  .leads__bg-right {
+    display: none;
+  }
+}
+
+/* line 51, src/scss/_components/homepage/_leads.scss */
+.leads__wrapper {
+  z-index: 1;
+  position: relative;
+  padding-top: 99px;
+  padding-bottom: 115px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 51, src/scss/_components/homepage/_leads.scss */
   .leads__wrapper {
     padding-top: 50px;
-    padding-bottom: 18px;
+    padding-bottom: 57px;
   }
+}
+
+/* line 62, src/scss/_components/homepage/_leads.scss */
+.leads__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 62, src/scss/_components/homepage/_leads.scss */
+  .leads__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 68, src/scss/_components/homepage/_leads.scss */
+.leads__row-left, .leads__row-right {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 68, src/scss/_components/homepage/_leads.scss */
+  .leads__row-left, .leads__row-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 76, src/scss/_components/homepage/_leads.scss */
+  .leads__row-left {
+    display: none;
+  }
+}
+
+/* line 82, src/scss/_components/homepage/_leads.scss */
+.leads__row-right {
+  padding-left: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 82, src/scss/_components/homepage/_leads.scss */
+  .leads__row-right {
+    padding-left: 0;
+  }
+}
+
+/* line 90, src/scss/_components/homepage/_leads.scss */
+.leads__text {
+  text-align: left;
+}
+
+/* line 93, src/scss/_components/homepage/_leads.scss */
+.leads__text--pb {
+  padding-bottom: 40px;
+}
+
+/* line 98, src/scss/_components/homepage/_leads.scss */
+.leads__btn {
+  max-width: 232px;
 }
 
 /* line 3, src/scss/_components/homepage/_pipelines.scss */
@@ -1136,7 +1275,7 @@ picture {
 /* line 6, src/scss/_components/homepage/_pipelines.scss */
 .pipelines__bg {
   position: absolute;
-  top: 380px;
+  top: 400px;
   left: 0;
   width: 100%;
   height: 400px;
