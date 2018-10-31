@@ -17,66 +17,90 @@
 }
 
 /* line 13, src/scss/_generated/_spriteSVG.scss */
+.icon-batman {
+  width: 36px;
+  height: 39px;
+}
+
+/* line 17, src/scss/_generated/_spriteSVG.scss */
+.icon-check {
+  width: 45.701px;
+  height: 45.7px;
+}
+
+/* line 21, src/scss/_generated/_spriteSVG.scss */
 .icon-cloud {
   width: 44px;
   height: 42px;
 }
 
-/* line 17, src/scss/_generated/_spriteSVG.scss */
+/* line 25, src/scss/_generated/_spriteSVG.scss */
 .icon-features {
   width: 40px;
   height: 37px;
 }
 
-/* line 21, src/scss/_generated/_spriteSVG.scss */
+/* line 29, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-0 {
   width: 40px;
   height: 40px;
 }
 
-/* line 25, src/scss/_generated/_spriteSVG.scss */
+/* line 33, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-1 {
   width: 40px;
   height: 40px;
 }
 
-/* line 29, src/scss/_generated/_spriteSVG.scss */
+/* line 37, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-2 {
   width: 40px;
   height: 42px;
 }
 
-/* line 33, src/scss/_generated/_spriteSVG.scss */
+/* line 41, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-3 {
   width: 44px;
   height: 46px;
 }
 
-/* line 37, src/scss/_generated/_spriteSVG.scss */
+/* line 45, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-4 {
   width: 40px;
   height: 40px;
 }
 
-/* line 41, src/scss/_generated/_spriteSVG.scss */
+/* line 49, src/scss/_generated/_spriteSVG.scss */
+.icon-flag {
+  width: 24px;
+  height: 28px;
+}
+
+/* line 53, src/scss/_generated/_spriteSVG.scss */
 .icon-leads {
   width: 44px;
   height: 43px;
 }
 
-/* line 45, src/scss/_generated/_spriteSVG.scss */
+/* line 57, src/scss/_generated/_spriteSVG.scss */
 .icon-logo {
   width: 145px;
   height: 36px;
 }
 
-/* line 49, src/scss/_generated/_spriteSVG.scss */
+/* line 61, src/scss/_generated/_spriteSVG.scss */
+.icon-money {
+  width: 26px;
+  height: 36px;
+}
+
+/* line 65, src/scss/_generated/_spriteSVG.scss */
 .icon-pipelines {
   width: 40px;
   height: 42px;
 }
 
-/* line 53, src/scss/_generated/_spriteSVG.scss */
+/* line 69, src/scss/_generated/_spriteSVG.scss */
 .icon-request {
   width: 48px;
   height: 36px;
@@ -305,37 +329,63 @@ picture {
   height: 100%;
 }
 
-/* line 6, src/scss/_shared/_common.scss */
+/* line 5, src/scss/_shared/_common.scss */
+.c-text {
+  width: 100%;
+  max-width: 804px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #939393;
+  line-height: 1.6;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 5, src/scss/_shared/_common.scss */
+  .c-text {
+    font-size: calc(16px + 2 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 5, src/scss/_shared/_common.scss */
+  .c-text {
+    font-size: 18px;
+  }
+}
+
+/* line 20, src/scss/_shared/_common.scss */
 .address__row {
   color: #8F8F8F;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 9, src/scss/_shared/_common.scss */
+  /* line 23, src/scss/_shared/_common.scss */
   .address__row p {
     text-align: center;
   }
 }
 
-/* line 16, src/scss/_shared/_common.scss */
+/* line 30, src/scss/_shared/_common.scss */
 .address__row-0 p {
   min-height: 40px;
   padding-bottom: 15px;
 }
 
-/* line 22, src/scss/_shared/_common.scss */
+/* line 36, src/scss/_shared/_common.scss */
 .address__row-1 {
   padding-bottom: 40px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 22, src/scss/_shared/_common.scss */
+  /* line 36, src/scss/_shared/_common.scss */
   .address__row-1 {
     padding-bottom: 27px;
   }
 }
 
-/* line 29, src/scss/_shared/_common.scss */
+/* line 43, src/scss/_shared/_common.scss */
 .address__row-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -347,7 +397,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 29, src/scss/_shared/_common.scss */
+  /* line 43, src/scss/_shared/_common.scss */
   .address__row-2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -355,7 +405,7 @@ picture {
   }
 }
 
-/* line 36, src/scss/_shared/_common.scss */
+/* line 50, src/scss/_shared/_common.scss */
 .address__row-2 a {
   color: #8F8F8F;
   -webkit-transition: color 0.3s ease-in-out;
@@ -363,7 +413,7 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 40, src/scss/_shared/_common.scss */
+/* line 54, src/scss/_shared/_common.scss */
 .address__row-2 a:hover {
   color: #fff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -371,18 +421,18 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 45, src/scss/_shared/_common.scss */
+/* line 59, src/scss/_shared/_common.scss */
 .address__row-2 a:first-of-type {
   padding-bottom: 10px;
   color: #fff;
 }
 
-/* line 49, src/scss/_shared/_common.scss */
+/* line 63, src/scss/_shared/_common.scss */
 .address__row-2 a:first-of-type:hover {
   color: #8F8F8F;
 }
 
-/* line 62, src/scss/_shared/_common.scss */
+/* line 76, src/scss/_shared/_common.scss */
 .copyright__text {
   color: #8F8F8F;
   font-size: 16px;
@@ -1094,20 +1144,380 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_analytics.scss */
 .analytics {
+  overflow: hidden;
   background-color: #F8FAFC;
 }
 
-/* line 6, src/scss/_components/homepage/_analytics.scss */
+/* line 7, src/scss/_components/homepage/_analytics.scss */
 .analytics__wrapper {
   padding-top: 98px;
   padding-bottom: 100px;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 6, src/scss/_components/homepage/_analytics.scss */
+  /* line 7, src/scss/_components/homepage/_analytics.scss */
   .analytics__wrapper {
     padding-top: 49px;
     padding-bottom: 50px;
+  }
+}
+
+/* line 16, src/scss/_components/homepage/_analytics.scss */
+.analytics__text {
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 16, src/scss/_components/homepage/_analytics.scss */
+  .analytics__text {
+    padding-bottom: 30px;
+  }
+}
+
+/* line 23, src/scss/_components/homepage/_analytics.scss */
+.analytics__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 23, src/scss/_components/homepage/_analytics.scss */
+  .analytics__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 33, src/scss/_components/homepage/_analytics.scss */
+.analytics__row-left, .analytics__row-right {
+  width: 50%;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 33, src/scss/_components/homepage/_analytics.scss */
+  .analytics__row-left, .analytics__row-right {
+    width: 100%;
+  }
+}
+
+/* line 41, src/scss/_components/homepage/_analytics.scss */
+.analytics__row-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 41, src/scss/_components/homepage/_analytics.scss */
+  .analytics__row-right {
+    margin-top: 30px;
+  }
+}
+
+/* line 50, src/scss/_components/homepage/_analytics.scss */
+.analytics__card {
+  width: 100%;
+  max-width: 430px;
+}
+
+/* line 56, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-0 .analytics__card-box {
+  padding: 30px 30px 30px 60px;
+}
+
+/* line 59, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-0 .analytics__card-box--inner {
+  left: 0;
+}
+
+/* line 62, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-0 .analytics__card-box--outer {
+  left: 30px;
+}
+
+/* line 66, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-0 .analytics__card-circle {
+  left: 44px;
+}
+
+/* line 74, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-1 .analytics__card-box {
+  padding: 30px 60px 30px 30px;
+}
+
+/* line 77, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-1 .analytics__card-box--inner {
+  right: 0;
+}
+
+/* line 80, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-1 .analytics__card-box--outer {
+  right: 30px;
+}
+
+/* line 84, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-1 .analytics__card-circle {
+  left: 15px;
+}
+
+/* line 87, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-1 .analytics__card-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 93, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-box {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  margin-bottom: 35px;
+}
+
+/* line 99, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-box--inner {
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  max-width: 410px;
+  height: 240px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* line 112, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-box--outer {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  max-width: 400px;
+  height: 100%;
+  border-radius: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+/* line 125, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-circle {
+  z-index: 1;
+  position: absolute;
+  bottom: -35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #00439B;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  border: 10px solid #F8F8F8;
+}
+
+/* line 138, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-circle svg {
+  fill: #fff;
+}
+
+/* line 143, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-wrapper {
+  z-index: 1;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 149, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-left {
+  width: 110px;
+}
+
+/* line 152, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-left > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #E9E9E9;
+}
+
+/* line 161, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-left > div svg {
+  fill: #CD084B;
+}
+
+/* line 167, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-right {
+  width: 100%;
+  max-width: calc(100% - 110px);
+  padding-top: 18px;
+}
+
+/* line 173, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-line {
+  border-radius: 4px;
+  background-color: #E9E9E9;
+}
+
+/* line 177, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-line-0 {
+  height: 20px;
+  margin-bottom: 14px;
+}
+
+/* line 181, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-line-1 {
+  width: 50%;
+  height: 20px;
+  margin-bottom: 47px;
+}
+
+/* line 186, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-line-2 {
+  width: 100%;
+  max-width: 122px;
+  height: 12px;
+}
+
+/* line 191, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-line-3 {
+  width: 100%;
+  max-width: 154px;
+  height: 12px;
+}
+
+/* line 196, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-line-4 {
+  height: 20px;
+  margin-bottom: 14px;
+}
+
+/* line 200, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-line-5 {
+  width: 100%;
+  max-width: 260px;
+  height: 12px;
+}
+
+/* line 208, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 14px;
+}
+
+/* line 213, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-list li:last-child {
+  padding-bottom: 0;
+}
+
+/* line 218, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-list li > div:first-child {
+  width: 50px;
+}
+
+/* line 221, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-list li > div:first-child span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #CD084B;
+}
+
+/* line 230, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-list li > div:first-child span svg {
+  width: 16px;
+  fill: #fff;
+}
+
+/* line 236, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-list li > div:last-child {
+  width: 100%;
+  max-width: calc(100% - 50px);
+}
+
+/* line 244, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-graph {
+  margin-bottom: 23px;
+}
+
+/* line 247, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-graph img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 256, src/scss/_components/homepage/_analytics.scss */
+.analytics__card-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 60px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 256, src/scss/_components/homepage/_analytics.scss */
+  .analytics__card-title {
+    font-size: calc(18px + 6 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 256, src/scss/_components/homepage/_analytics.scss */
+  .analytics__card-title {
+    font-size: 24px;
   }
 }
 
@@ -1208,31 +1618,6 @@ picture {
   .cloud__wrapper {
     padding-top: 49px;
     padding-bottom: 50px;
-  }
-}
-
-/* line 69, src/scss/_components/homepage/_cloud.scss */
-.cloud__text {
-  width: 100%;
-  max-width: 804px;
-  margin-left: auto;
-  margin-right: auto;
-  color: #939393;
-  text-align: center;
-  font-size: 16px;
-}
-
-@media screen and (min-width: 320px) {
-  /* line 69, src/scss/_components/homepage/_cloud.scss */
-  .cloud__text {
-    font-size: calc(16px + 2 * (100vw - 320px) / 1120);
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  /* line 69, src/scss/_components/homepage/_cloud.scss */
-  .cloud__text {
-    font-size: 18px;
   }
 }
 
