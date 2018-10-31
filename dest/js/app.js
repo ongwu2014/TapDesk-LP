@@ -116,6 +116,22 @@ $(document).ready(function (ev) {
   };
 
   /**
+   *
+   */
+  var initPipelinesTabs = function initPipelinesTabs() {
+    $('.pipelines__tabs').on('click', function (ev) {
+      var elem = $(ev.currentTarget),
+          elemID = elem.data('tabs-id');
+
+      $('.pipelines__tabs').removeClass('is-active');
+      elem.addClass('is-active');
+
+      $('.pipelines__tabs-body > div').hide();
+      $('.pipelines__tabs-body > div[data-tabs-body="' + elemID + '"]').css("display", "flex").hide().fadeIn(500);
+    });
+  };
+
+  /**
    * @description Init all method
    */
   var initJquery = function initJquery() {
@@ -126,6 +142,7 @@ $(document).ready(function (ev) {
     // lib
     // callback
     initSelect();
+    initPipelinesTabs();
   };
   initJquery();
 });
