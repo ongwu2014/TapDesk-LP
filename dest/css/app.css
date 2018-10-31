@@ -11,66 +11,72 @@
 }
 
 /* line 9, src/scss/_generated/_spriteSVG.scss */
+.icon-angle {
+  width: 30.727px;
+  height: 30.727px;
+}
+
+/* line 13, src/scss/_generated/_spriteSVG.scss */
 .icon-cloud {
   width: 44px;
   height: 42px;
 }
 
-/* line 13, src/scss/_generated/_spriteSVG.scss */
+/* line 17, src/scss/_generated/_spriteSVG.scss */
 .icon-features {
   width: 40px;
   height: 37px;
 }
 
-/* line 17, src/scss/_generated/_spriteSVG.scss */
+/* line 21, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-0 {
   width: 40px;
   height: 40px;
 }
 
-/* line 21, src/scss/_generated/_spriteSVG.scss */
+/* line 25, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-1 {
   width: 40px;
   height: 40px;
 }
 
-/* line 25, src/scss/_generated/_spriteSVG.scss */
+/* line 29, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-2 {
   width: 40px;
   height: 42px;
 }
 
-/* line 29, src/scss/_generated/_spriteSVG.scss */
+/* line 33, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-3 {
   width: 44px;
   height: 46px;
 }
 
-/* line 33, src/scss/_generated/_spriteSVG.scss */
+/* line 37, src/scss/_generated/_spriteSVG.scss */
 .icon-features-box-4 {
   width: 40px;
   height: 40px;
 }
 
-/* line 37, src/scss/_generated/_spriteSVG.scss */
+/* line 41, src/scss/_generated/_spriteSVG.scss */
 .icon-leads {
   width: 44px;
   height: 43px;
 }
 
-/* line 41, src/scss/_generated/_spriteSVG.scss */
+/* line 45, src/scss/_generated/_spriteSVG.scss */
 .icon-logo {
   width: 145px;
   height: 36px;
 }
 
-/* line 45, src/scss/_generated/_spriteSVG.scss */
+/* line 49, src/scss/_generated/_spriteSVG.scss */
 .icon-pipelines {
   width: 40px;
   height: 42px;
 }
 
-/* line 49, src/scss/_generated/_spriteSVG.scss */
+/* line 53, src/scss/_generated/_spriteSVG.scss */
 .icon-request {
   width: 48px;
   height: 36px;
@@ -597,18 +603,326 @@ picture {
 }
 
 /* line 22, src/scss/_macros/_btn.scss */
+.c-btn:hover {
+  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 26, src/scss/_macros/_btn.scss */
 .c-btn--features {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 28, src/scss/_macros/_btn.scss */
+/* line 32, src/scss/_macros/_btn.scss */
 .c-btn--border:hover {
   background-color: #cd084b;
   color: #fff;
-  -webkit-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* line 38, src/scss/_macros/_btn.scss */
+.c-btn--bg {
+  background-color: #cd084b;
+  color: #fff;
+}
+
+/* line 42, src/scss/_macros/_btn.scss */
+.c-btn--bg:hover {
+  background-color: transparent;
+}
+
+/* line 3, src/scss/_macros/_form.scss */
+.c-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* line 9, src/scss/_macros/_form.scss */
+.c-form__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 12, src/scss/_macros/_form.scss */
+.c-form__row--request {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 12, src/scss/_macros/_form.scss */
+  .c-form__row--request {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 12, src/scss/_macros/_form.scss */
+  .c-form__row--request {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 23, src/scss/_macros/_form.scss */
+.c-form__row--request .c-form__row-left {
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 23, src/scss/_macros/_form.scss */
+  .c-form__row--request .c-form__row-left {
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 23, src/scss/_macros/_form.scss */
+  .c-form__row--request .c-form__row-left {
+    padding-right: 0;
+  }
+}
+
+/* line 32, src/scss/_macros/_form.scss */
+.c-form__row--request .c-form__row-right {
+  padding-left: 20px;
+}
+
+@media screen and (max-width: 991px) {
+  /* line 32, src/scss/_macros/_form.scss */
+  .c-form__row--request .c-form__row-right {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 32, src/scss/_macros/_form.scss */
+  .c-form__row--request .c-form__row-right {
+    padding-left: 0;
+  }
+}
+
+/* line 43, src/scss/_macros/_form.scss */
+.c-form__row-left, .c-form__row-right {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 43, src/scss/_macros/_form.scss */
+  .c-form__row-left, .c-form__row-right {
+    width: 100%;
+  }
+}
+
+/* line 52, src/scss/_macros/_form.scss */
+.c-form__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 57, src/scss/_macros/_form.scss */
+  .c-form__group--request {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 62, src/scss/_macros/_form.scss */
+.c-form__group--request .c-form__group-col {
+  width: 50%;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 62, src/scss/_macros/_form.scss */
+  .c-form__group--request .c-form__group-col {
+    width: 100%;
+  }
+}
+
+/* line 68, src/scss/_macros/_form.scss */
+.c-form__group--request .c-form__group-col-0 {
+  padding-right: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 68, src/scss/_macros/_form.scss */
+  .c-form__group--request .c-form__group-col-0 {
+    padding-right: 0;
+  }
+}
+
+/* line 75, src/scss/_macros/_form.scss */
+.c-form__group--request .c-form__group-col-1 {
+  padding-left: 10px;
+}
+
+@media screen and (max-width: 575px) {
+  /* line 75, src/scss/_macros/_form.scss */
+  .c-form__group--request .c-form__group-col-1 {
+    padding-left: 0;
+  }
+}
+
+/* line 90, src/scss/_macros/_form.scss */
+.c-form__field {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+/* line 101, src/scss/_macros/_form.scss */
+.c-form__field--btn {
+  width: 100%;
+  padding-top: 30px;
+}
+
+/* line 107, src/scss/_macros/_form.scss */
+.c-form__label {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 30px;
+  margin-bottom: 6px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+
+/* line 119, src/scss/_macros/_form.scss */
+.c-form__input-wrapper, .c-form__textarea-wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/* line 125, src/scss/_macros/_form.scss */
+.c-form__input, .c-form__textarea {
+  outline: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 135, src/scss/_macros/_form.scss */
+.c-form__input {
+  padding: 0 20px;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 10px;
+  color: #000;
+  font-size: 18px;
+}
+
+/* line 143, src/scss/_macros/_form.scss */
+.c-form__input-wrapper {
+  min-height: 60px;
+}
+
+/* line 148, src/scss/_macros/_form.scss */
+.c-form__select {
+  position: relative;
+  height: 100%;
+  min-height: 60px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+/* line 155, src/scss/_macros/_form.scss */
+.c-form__select select {
+  opacity: 0;
+  cursor: pointer;
+  outline: none;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+/* line 169, src/scss/_macros/_form.scss */
+.c-form__select-value {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  line-height: 60px;
+  width: calc(100% - 52px);
+  padding-left: 20px;
+  color: #000;
+  font-size: 18px;
+}
+
+/* line 185, src/scss/_macros/_form.scss */
+.c-form__select-icon {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 0;
+  right: 0;
+  width: 52px;
+  height: 100%;
+}
+
+/* line 195, src/scss/_macros/_form.scss */
+.c-form__select-icon svg {
+  width: 12px;
+}
+
+/* line 209, src/scss/_macros/_form.scss */
+.c-form__notify {
+  display: none;
+}
+
+/* line 213, src/scss/_macros/_form.scss */
+.c-form__btn {
+  max-width: 256px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* line 3, src/scss/_components/_footer.scss */
@@ -1042,9 +1356,28 @@ picture {
   position: relative;
 }
 
-/* line 8, src/scss/_components/homepage/_request.scss */
+/* line 7, src/scss/_components/homepage/_request.scss */
+.request:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  mix-blend-mode: soft-light;
+  background-image: url("../img/img-bg-request.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 25, src/scss/_components/homepage/_request.scss */
 .request__bg {
   overflow: hidden;
+  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
@@ -1054,7 +1387,7 @@ picture {
   border-radius: 50%/100px 100px 0 0;
 }
 
-/* line 18, src/scss/_components/homepage/_request.scss */
+/* line 36, src/scss/_components/homepage/_request.scss */
 .request__bg-inner {
   width: 100%;
   height: 100%;
@@ -1065,7 +1398,7 @@ picture {
   background: linear-gradient(to right, #00449D, #001632);
 }
 
-/* line 25, src/scss/_components/homepage/_request.scss */
+/* line 43, src/scss/_components/homepage/_request.scss */
 .request__wrapper {
   z-index: 1;
   position: relative;
@@ -1074,7 +1407,7 @@ picture {
 }
 
 @media screen and (max-width: 767px) {
-  /* line 25, src/scss/_components/homepage/_request.scss */
+  /* line 43, src/scss/_components/homepage/_request.scss */
   .request__wrapper {
     padding-top: 51px;
     padding-bottom: 50px;
