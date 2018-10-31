@@ -587,7 +587,7 @@ picture {
 
 /* line 31, src/scss/_macros/_title.scss */
 .c-title--ai {
-  padding-bottom: 42px;
+  padding-bottom: 76px;
 }
 
 /* line 35, src/scss/_macros/_title.scss */
@@ -1097,21 +1097,172 @@ picture {
 
 /* line 3, src/scss/_components/homepage/_ai.scss */
 .ai {
+  position: relative;
+  overflow: hidden;
   border-bottom: 1px solid #D8D8D8;
 }
 
-/* line 6, src/scss/_components/homepage/_ai.scss */
-.ai__wrapper {
-  padding-top: 68px;
-  padding-bottom: 60px;
+/* line 8, src/scss/_components/homepage/_ai.scss */
+.ai__bg {
+  z-index: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (max-width: 767px) {
-  /* line 6, src/scss/_components/homepage/_ai.scss */
+  /* line 8, src/scss/_components/homepage/_ai.scss */
+  .ai__bg {
+    position: static;
+    margin-bottom: 30px;
+  }
+}
+
+/* line 22, src/scss/_components/homepage/_ai.scss */
+.ai__bg-left, .ai__bg-right {
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 22, src/scss/_components/homepage/_ai.scss */
+  .ai__bg-left, .ai__bg-right {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 31, src/scss/_components/homepage/_ai.scss */
+  .ai__bg-left {
+    display: none;
+  }
+}
+
+/* line 37, src/scss/_components/homepage/_ai.scss */
+.ai__bg-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media screen and (max-width: 1199px) {
+  /* line 37, src/scss/_components/homepage/_ai.scss */
+  .ai__bg-right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* line 37, src/scss/_components/homepage/_ai.scss */
+  .ai__bg-right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/* line 48, src/scss/_components/homepage/_ai.scss */
+.ai__bg-right img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 56, src/scss/_components/homepage/_ai.scss */
+.ai__wrapper {
+  padding-top: 68px;
+  padding-bottom: 118px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 56, src/scss/_components/homepage/_ai.scss */
   .ai__wrapper {
     padding-top: 34px;
     padding-bottom: 30px;
   }
+}
+
+/* line 65, src/scss/_components/homepage/_ai.scss */
+.ai__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 65, src/scss/_components/homepage/_ai.scss */
+  .ai__row {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+/* line 71, src/scss/_components/homepage/_ai.scss */
+.ai__row-left, .ai__row-right {
+  width: 50%;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 71, src/scss/_components/homepage/_ai.scss */
+  .ai__row-left, .ai__row-right {
+    width: 100%;
+  }
+}
+
+/* line 79, src/scss/_components/homepage/_ai.scss */
+.ai__row-left {
+  padding-right: 60px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 79, src/scss/_components/homepage/_ai.scss */
+  .ai__row-left {
+    padding-right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* line 86, src/scss/_components/homepage/_ai.scss */
+  .ai__row-right {
+    display: none;
+  }
+}
+
+/* line 95, src/scss/_components/homepage/_ai.scss */
+.ai__col-2 {
+  z-index: 1;
+  position: relative;
+}
+
+/* line 101, src/scss/_components/homepage/_ai.scss */
+.ai__text {
+  text-align: left;
+}
+
+/* line 104, src/scss/_components/homepage/_ai.scss */
+.ai__text--pb {
+  padding-bottom: 40px;
+}
+
+/* line 109, src/scss/_components/homepage/_ai.scss */
+.ai__btn {
+  max-width: 232px;
 }
 
 /* line 3, src/scss/_components/homepage/_leads.scss */
@@ -1252,17 +1403,23 @@ picture {
   }
 }
 
-/* line 90, src/scss/_components/homepage/_leads.scss */
+/* line 91, src/scss/_components/homepage/_leads.scss */
+.leads__col-2 {
+  z-index: 1;
+  position: relative;
+}
+
+/* line 97, src/scss/_components/homepage/_leads.scss */
 .leads__text {
   text-align: left;
 }
 
-/* line 93, src/scss/_components/homepage/_leads.scss */
+/* line 100, src/scss/_components/homepage/_leads.scss */
 .leads__text--pb {
   padding-bottom: 40px;
 }
 
-/* line 98, src/scss/_components/homepage/_leads.scss */
+/* line 105, src/scss/_components/homepage/_leads.scss */
 .leads__btn {
   max-width: 232px;
 }
