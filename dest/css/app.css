@@ -101,6 +101,12 @@
 }
 
 /* line 69, src/scss/_generated/_spriteSVG.scss */
+.icon-play {
+  width: 69px;
+  height: 80px;
+}
+
+/* line 73, src/scss/_generated/_spriteSVG.scss */
 .icon-request {
   width: 48px;
   height: 36px;
@@ -1093,6 +1099,278 @@ picture {
   .footer__title {
     text-align: center;
   }
+}
+
+/* line 3, src/scss/_components/homepage/_main.scss */
+.main {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 7, src/scss/_components/homepage/_main.scss */
+.main:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  mix-blend-mode: soft-light;
+  background-image: url("../img/img-bg-main.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* line 24, src/scss/_components/homepage/_main.scss */
+.main__bg {
+  overflow: hidden;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw + 300px);
+  margin-left: -150px;
+  height: calc(100% - 102px);
+  border-top-left-radius: 50% 0;
+  border-top-right-radius: 50% 0;
+  border-bottom-right-radius: 50% 100px;
+  border-bottom-left-radius: 50% 100px;
+}
+
+/* line 38, src/scss/_components/homepage/_main.scss */
+.main__bg-inner {
+  width: 100%;
+  height: 100%;
+  background: #00449D;
+  background: -webkit-gradient(linear, left top, right top, from(#00449D), to(#001632));
+  background: -webkit-linear-gradient(left, #00449D, #001632);
+  background: -o-linear-gradient(left, #00449D, #001632);
+  background: linear-gradient(to right, #00449D, #001632);
+}
+
+/* line 45, src/scss/_components/homepage/_main.scss */
+.main__wrapper {
+  z-index: 1;
+  position: relative;
+  padding-top: 146px;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 45, src/scss/_components/homepage/_main.scss */
+  .main__wrapper {
+    padding-top: 73px;
+  }
+}
+
+/* line 54, src/scss/_components/homepage/_main.scss */
+.main__subtitle, .main__title {
+  text-align: center;
+}
+
+/* line 59, src/scss/_components/homepage/_main.scss */
+.main__subtitle {
+  padding-bottom: 20px;
+  color: rgba(255, 255, 255, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 2.25px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 59, src/scss/_components/homepage/_main.scss */
+  .main__subtitle {
+    font-size: calc(16px + 2 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 59, src/scss/_components/homepage/_main.scss */
+  .main__subtitle {
+    font-size: 18px;
+  }
+}
+
+/* line 68, src/scss/_components/homepage/_main.scss */
+.main__title {
+  padding-bottom: 35px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 68, src/scss/_components/homepage/_main.scss */
+  .main__title {
+    font-size: calc(30px + 20 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 68, src/scss/_components/homepage/_main.scss */
+  .main__title {
+    font-size: 50px;
+  }
+}
+
+/* line 76, src/scss/_components/homepage/_main.scss */
+.main__btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+
+/* line 82, src/scss/_components/homepage/_main.scss */
+.main__video {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 31px);
+  border-radius: 20px;
+  background-color: #F7F7F7;
+}
+
+/* line 92, src/scss/_components/homepage/_main.scss */
+.main__video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 840px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 404px;
+}
+
+@media screen and (min-width: 320px) {
+  /* line 92, src/scss/_components/homepage/_main.scss */
+  .main__video-wrapper {
+    height: calc(404px + 100 * (100vw - 320px) / 1120);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* line 92, src/scss/_components/homepage/_main.scss */
+  .main__video-wrapper {
+    height: 504px;
+  }
+}
+
+/* line 101, src/scss/_components/homepage/_main.scss */
+.main__video-wrapper:before {
+  z-index: 0;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/img-video-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* line 115, src/scss/_components/homepage/_main.scss */
+.main__video-wrapper video[poster] {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+/* line 123, src/scss/_components/homepage/_main.scss */
+.main__video-btn {
+  z-index: 2;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: calc(50% - 15px);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+/* line 138, src/scss/_components/homepage/_main.scss */
+.main__video-btn:hover svg {
+  -webkit-transform: scale(0.9);
+      -ms-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 144, src/scss/_components/homepage/_main.scss */
+.main__video-btn svg {
+  margin-left: 5px;
+  fill: #003F91;
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+/* line 152, src/scss/_components/homepage/_main.scss */
+.main__video-progress {
+  z-index: 2;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 71px;
+  width: calc(100% - 100px);
+  height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 7px;
+  background-color: #E1E1E1;
+}
+
+@media screen and (max-width: 767px) {
+  /* line 152, src/scss/_components/homepage/_main.scss */
+  .main__video-progress {
+    width: calc(100% - 30px);
+    bottom: 30px;
+  }
+}
+
+/* line 171, src/scss/_components/homepage/_main.scss */
+.main__video-progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #CD084B;
+  -webkit-transition: width 0.3s ease-in-out;
+  -o-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
 
 /* line 3, src/scss/_components/homepage/_ai.scss */

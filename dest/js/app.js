@@ -49,7 +49,7 @@ var initWebFontLoader = function initWebFontLoader() {
 
   WebFont.load({
     google: {
-      families: ['Muli:300,400,600,700,800,900', 'OpenSans:400,600,700']
+      families: ['Muli:200,300,400,600,700,800,900', 'OpenSans:400,600,700']
     }
   });
 
@@ -131,6 +131,60 @@ $(document).ready(function (ev) {
     });
   };
 
+  var initVideo = function initVideo() {
+    var vid = document.getElementById("video");
+
+    /**
+     *
+     */
+    vid.ontimeupdate = function () {
+      var percentage = vid.currentTime / vid.duration * 100;
+      $("[progress-video-js] span").css("width", percentage + "%");
+
+      if (percentage === 100) {
+        $("[progress-video-js] span").css("width", "0");
+        $('[play-video-js]').fadeIn(300);
+      }
+    };
+
+    /**
+     *
+     */
+    $("[progress-video-js]").on("click", function (ev) {
+      var offset = $(ev.currentTarget).offset(),
+          left = ev.pageX - offset.left,
+          totalWidth = $("[progress-video-js]").width(),
+          percentage = left / totalWidth,
+          vidTime = vid.duration * percentage;
+
+      vid.currentTime = vidTime;
+    });
+
+    /**
+     *
+     */
+    $('[play-video-js]').on('click', function (ev) {
+      var elem = $(ev.currentTarget);
+
+      if (!vid.paused) {
+        vid.pause();
+      } else {
+        vid.play();
+        elem.fadeOut(300);
+      }
+    });
+
+    /**
+     *
+     */
+    $(vid).on('click', function () {
+      if (!vid.paused) {
+        vid.pause();
+        $('[play-video-js]').fadeIn(300);
+      }
+    });
+  };
+
   /**
    * @description Init all method
    */
@@ -143,6 +197,7 @@ $(document).ready(function (ev) {
     // callback
     initSelect();
     initPipelinesTabs();
+    initVideo();
   };
   initJquery();
 });
