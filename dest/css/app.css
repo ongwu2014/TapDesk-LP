@@ -532,6 +532,11 @@ picture {
   color: #8F8F8F;
 }
 
+/* line 23, src/scss/_shared/_common.scss */
+.address__row p {
+  font-size: 14px;
+}
+
 @media screen and (max-width: 575px) {
   /* line 23, src/scss/_shared/_common.scss */
   .address__row p {
@@ -539,25 +544,25 @@ picture {
   }
 }
 
-/* line 30, src/scss/_shared/_common.scss */
+/* line 31, src/scss/_shared/_common.scss */
 .address__row-0 p {
   min-height: 40px;
   padding-bottom: 15px;
 }
 
-/* line 36, src/scss/_shared/_common.scss */
+/* line 37, src/scss/_shared/_common.scss */
 .address__row-1 {
   padding-bottom: 40px;
 }
 
 @media screen and (max-width: 575px) {
-  /* line 36, src/scss/_shared/_common.scss */
+  /* line 37, src/scss/_shared/_common.scss */
   .address__row-1 {
     padding-bottom: 27px;
   }
 }
 
-/* line 43, src/scss/_shared/_common.scss */
+/* line 44, src/scss/_shared/_common.scss */
 .address__row-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -569,7 +574,7 @@ picture {
 }
 
 @media screen and (max-width: 575px) {
-  /* line 43, src/scss/_shared/_common.scss */
+  /* line 44, src/scss/_shared/_common.scss */
   .address__row-2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -577,15 +582,16 @@ picture {
   }
 }
 
-/* line 50, src/scss/_shared/_common.scss */
+/* line 51, src/scss/_shared/_common.scss */
 .address__row-2 a {
   color: #8F8F8F;
+  font-size: 14px;
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-/* line 54, src/scss/_shared/_common.scss */
+/* line 56, src/scss/_shared/_common.scss */
 .address__row-2 a:hover {
   color: #fff;
   -webkit-transition: color 0.3s ease-in-out;
@@ -593,21 +599,21 @@ picture {
   transition: color 0.3s ease-in-out;
 }
 
-/* line 59, src/scss/_shared/_common.scss */
+/* line 61, src/scss/_shared/_common.scss */
 .address__row-2 a:first-of-type {
   padding-bottom: 10px;
   color: #fff;
 }
 
-/* line 63, src/scss/_shared/_common.scss */
+/* line 65, src/scss/_shared/_common.scss */
 .address__row-2 a:first-of-type:hover {
   color: #8F8F8F;
 }
 
-/* line 76, src/scss/_shared/_common.scss */
+/* line 78, src/scss/_shared/_common.scss */
 .copyright__text {
   color: #8F8F8F;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* line 3, src/scss/_shared/_iconSVG.scss */
@@ -740,6 +746,7 @@ picture {
           align-items: center;
   min-height: 40px;
   color: #8F8F8F;
+  font-size: 14px;
 }
 
 @media screen and (max-width: 575px) {
@@ -751,19 +758,19 @@ picture {
   }
 }
 
-/* line 55, src/scss/_macros/_nav.scss */
+/* line 56, src/scss/_macros/_nav.scss */
 .nav--footer .nav__link:hover {
   color: #fff;
 }
 
-/* line 61, src/scss/_macros/_nav.scss */
+/* line 62, src/scss/_macros/_nav.scss */
 .nav__link {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
 }
 
-/* line 64, src/scss/_macros/_nav.scss */
+/* line 65, src/scss/_macros/_nav.scss */
 .nav__link:hover {
   -webkit-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
@@ -1651,7 +1658,7 @@ picture {
   min-height: 30px;
   padding-bottom: 28px;
   color: #fff;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
 }
 
