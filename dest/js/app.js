@@ -87,7 +87,7 @@ var initWebFontLoader = function initWebFontLoader() {
 
   WebFont.load({
     google: {
-      families: ['Muli:200,300,400,600,700,800,900', 'OpenSans:400,600,700']
+      families: ['Muli:200,300,400,600,700,800,900']
     }
   });
 
@@ -180,14 +180,22 @@ $(document).ready(function (ev) {
       var elem = $(ev.currentTarget),
           elemID = elem.data('tabs-id');
 
+      var tabsBody = $('.pipelines__tabs-body');
+
       $('.pipelines__tabs').removeClass('is-active');
       elem.addClass('is-active');
 
-      $('.pipelines__tabs-body > div').hide();
-      $('.pipelines__tabs-body > div[data-tabs-body="' + elemID + '"]').css("display", "flex").hide().fadeIn(500);
+      $('.pipelines__slider-item').removeClass('is-show');
+      $('.pipelines__slider-item-' + elemID).addClass('is-show');
+
+      $('.pipelines__tabs-body > div').removeClass('is-active');
+      $('.pipelines__tabs-body > div[data-tabs-body="' + elemID + '"]').addClass('is-active');
     });
   };
 
+  /**
+   *
+   */
   var initVideo = function initVideo() {
     var vid = document.getElementById("video");
 
